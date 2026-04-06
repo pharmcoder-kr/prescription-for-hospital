@@ -13,6 +13,7 @@
     "build-nsis": "electron-builder --win --x64 --config.compression=maximum --config.forceCodeSigning=false --config.win.signAndEditExecutable=false --config.win.target=nsis",
     "build-all": "npm run build && npm run build-nsis",
     "release": "node create-release.js",
+    "release:github": "node scripts/create-github-release.js",
     "reset": "node reset-local-data.js",
     "check-token": "node check-token-simple.js",
     "find-token": "node find-token.js"
